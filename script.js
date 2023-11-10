@@ -32,11 +32,78 @@ const Unico = {
     file: "Unico-Marco Telles",
     liked: false,
 };
+const AbramasPortas = {
+    songName: "Abram as Portas",
+    artist : "CIA Worship",
+    file: "Abram as Portas   CIA Worship (Clipe Oficial)",
+    liked: false,
+};
+const BondadedeDeus = {
+    songName: "Bondade de Deus",
+    artist : "worship",
+    file: "Bondade_de_Deus",
+    liked: false,
+};
+const EleVem = {
+    songName: "Ele Vem",
+    artist : "Gabriel Guedes. feat Gabriela Rocha",
+    file: "Gabriel Guedes   Ele Vem (Ao Vivo)   feat. Gabriela Rocha",
+    liked: false,
+};
+const NadaMais = {
+    songName: "Nada Mais",
+    artist : "Gabriel Guedes",
+    file: "Gabriel Guedes   Nada Mais (Clipe Oficial)",
+    liked: false,
+};
+const MeAtraiu = {
+    songName: "Me Atraiu",
+    artist : "Gabriela Rocha",
+    file: "Gabriela Rocha   ME ATRAIU (AO VIVO)",
+    liked: false,
+};
+const NomeiodosLouvores = {
+    songName: "No Meio dos Louvores",
+    artist : "Israel Salazar",
+    file: "No Meio Dos Louvores-Israel Salazar",
+    liked: false,
+};
+const OnomedeleeJesus = {
+    songName: "O nome dele é Jesus",
+    artist : "Dunamis",
+    file: "O_Nome_Dele_é_jesus",
+    liked: false,
+};
+const Pisaduras = {
+    songName: "Pisaduras",
+    artist : "Rodolfo Abrantes",
+    file: "Pisaduras",
+    liked: false,
+};
+const PodemorarAqui = {
+    songName: "Pode Morar Aqui",
+    artist : "Theo Rubia",
+    file: "pode_morar_aqui",
+    liked: false,
+};
+const SaidaFrente = {
+    songName: "Sai da Frente",
+    artist : "Arena Louvor",
+    file: "Sai_da_Frente",
+    liked: false,
+};
+const UmnovoCantico = {
+    songName: "Um novo Cantico",
+    artist : "Cabana Sounds",
+    file: "Um_Novo_Cântico",
+    liked: false,
+};
 
 let isPlaying = false;/// onde fica a lista das músicas
 let isShuffled = false;
 let repeatOn = false;
-const originalPlaylist = JSON.parse(localStorage.getItem('playlist')) ?? [EstamosdePé, RealidadedoCéu, Unico];
+const originalPlaylist = JSON.parse(localStorage.getItem('playlist')) ?? [EstamosdePé, RealidadedoCéu, Unico, AbramasPortas, BondadedeDeus, EleVem, NadaMais, MeAtraiu,
+ NomeiodosLouvores, OnomedeleeJesus, Pisaduras, PodemorarAqui, SaidaFrente, UmnovoCantico];
 let sortedPlaylist = [...originalPlaylist];
 let index = 0;    
 
