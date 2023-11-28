@@ -13,12 +13,10 @@
         <h5 id="playlist-title">Playlist</h5>
         <img id="cover" alt="Disc cover."></img>
         <audio id="audio"></audio>
-        <div>
-            <button onclick="document.getElementById('audio').play()"></button>
-            <button onclick="document.getElementById('audio').pause()"></button>
-        </div>
+        
         <div id="below-cover">
             <div id="song-info">
+                
                 <div id="song-name">nome da música</div>
                 <div id="band-name" class="light-color">nome da banda</div>
             </div>    
@@ -33,6 +31,12 @@
                 <div id="total-time">00:00:00</div>
             </div>
         </div>
+        <div><!--Teste 2 para o botão de volume-->
+            <button onclick="document.getElementById('audio').play()"></button>
+            <button onclick="document.getElementById('audio').pause()"></button>
+        </div>
+        
+        <input type="range" id="weight" min="0" value="0.5" max="1" step="0.1" onchange="document.getElementById('audio').volume=this.value">
         <div id="button-container">           
             <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button><!--Embaralhar-->
             <button id="previous" class="button button-navigate"><i class="bi bi-skip-start"></i></button><!--voltar-->
